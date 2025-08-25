@@ -1,0 +1,134 @@
+@import "../../app.scss";
+
+
+.Hero{
+    height:calc(100vh - 100px);
+    background: linear-gradient( 180deg, #0c0c1d, #111132);
+    overflow: hidden;
+    position: relative;
+
+
+.wrapper{
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    padding-left: 140px;
+    @include mobile{
+        padding-left: 0px;
+    }
+    .textContainer{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        gap: 20px;
+        padding: 50px;
+        padding-block: 120px;
+        @include mobile{
+            width: 100%;
+            height: 50%;
+            gap: 10px;
+            text-align: center;
+            padding: 0px;
+            padding-block: 0px;
+            display: flex;
+            align-items: center;
+            margin-top: -10px;
+        }
+        h2{
+            font-size: 30px;
+            color: rebeccapurple;
+            letter-spacing: 10px;
+        }
+        h1{
+            font-size: 68px;
+            @include mobile{
+                font-size: 36px;
+            }
+        }
+        .buttons{
+                z-index: 2;
+            .oneButton{
+                padding: 20px;
+                margin-right: 20px;
+                border: 1px solid white;
+                border-radius: 10px;
+                background-color: transparent;
+                color: white;
+                font-weight: 300;
+                text-decoration: none;
+                cursor: pointer ;
+            }
+            .oneButton:last-of-type{
+                background-color: white;
+                color: black;
+                cursor: pointer ;
+            }
+        }
+        img{
+            width: 50px; 
+            z-index: 2;
+            cursor: pointer;
+            // @include mobile{
+            //     align-self: self-end;
+            //     margin-right: 10px;
+            //     margin-top: -70px;
+            //   }
+        }
+    }
+}
+
+.imageContainer{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    text-align: center;
+    // padding-right: 24px;
+    z-index: 8;
+    background-color: red;
+    @include mobile{
+        width: 100%;
+        height: 70%;
+        right: -10px;
+        top: unset;
+        bottom: -8%;
+        padding: 0px;
+        background-color: transparent;
+        margin: 0;
+    }
+    img{
+        width: 130%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 8;
+        @include mobile{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+.slidingTextContainer{
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 100%;
+    font-weight: bold;
+    z-index: 1;
+    @include mobile{
+        font-size: 20vh;
+        bottom: 0px;
+              }
+}
+.slidingText {
+    cursor: default;
+    display: inline-block;
+    padding-right: 2rem; 
+  }
+}
