@@ -24,7 +24,7 @@ export default function Services() {
   return (
     <motion.div animate={isInView && "animate"} ref={ref} className='services' variants={variants} initial={"initial"} >
         <motion.div variants={variants} className="servicestextContainer">
-            <pf>I focus on helping your brand grow <br /> and move forward</pf>
+            <p>I focus on helping your brand grow <br /> and move forward</p>
             <hr />
         </motion.div>
         <motion.div variants={variants} className="titleContainer">
