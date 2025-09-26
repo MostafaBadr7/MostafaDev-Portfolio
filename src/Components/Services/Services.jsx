@@ -24,12 +24,12 @@ export default function Services() {
   return (
     <motion.div animate={isInView && "animate"} ref={ref} className='services' variants={variants} initial={"initial"} >
         <motion.div variants={variants} className="servicestextContainer">
-            <pf>I focus on helping your brand growb <br /> and move forward</pf>
+            <pf>I focus on helping your brand grow <br /> and move forward</pf>
             <hr />
         </motion.div>
         <motion.div variants={variants} className="titleContainer">
             <div className="title">
-                <img src="/people.webp" alt="" />
+                <img src={`${import.meta.env.BASE_URL}people.webp`} alt="" />
                 <h1> <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas </h1>
             </div>
             <div className="title">

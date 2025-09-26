@@ -56,7 +56,7 @@ export default function Hero() {
                     onClick={() => {document.getElementById("Contact").scrollIntoView({ behavior: "smooth" });}}
                     variants={textVariants} className='oneButton'>Contact Me</motion.button>
                 </div>
-                <motion.img src="/scroll.png" alt="scroll" 
+                <motion.img src={`${import.meta.env.BASE_URL}scroll.png`} alt="scroll" 
                 variants={textVariants}
                 animate="scrollButton"
                 onClick={() => {
@@ -91,7 +91,7 @@ export default function Hero() {
         </motion.span>
         </motion.div>
         <div className="imageContainer">
-            <img src="/me2.png" alt="Mostafa Badr" />
+            <img src={`${import.meta.env.BASE_URL}me2.png`} alt="Mostafa Badr" />
         </div>
     </div>
   )

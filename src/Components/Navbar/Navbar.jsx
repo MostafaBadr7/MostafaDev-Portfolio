@@ -15,10 +15,10 @@ import {motion} from "framer-motion";
           Mostafa Dev
         </motion.span>
         <div className="social">
-        <a href="https://github.com/MostafaBadr7" target="_blank" rel="noopener noreferrer"><img src="/github.png" alt="" /></a>
-        <a   href="https://www.linkedin.com/in/mostafa-badr-610b64208/" target="_blank" rel="noopener noreferrer"><img src="/linkedin.png" alt="" /></a> 
-        <a href="#"><img src="/youtube.png" alt="" /></a>
-        <a href="#"><img src="/dribbble.png" alt="" /></a>
+        <a href="https://github.com/MostafaBadr7" target="_blank" rel="noopener noreferrer"><img src={`${import.meta.env.BASE_URL}github.png`} alt="" /></a>
+        <a   href="https://www.linkedin.com/in/mostafa-badr-610b64208/" target="_blank" rel="noopener noreferrer"><img src={`${import.meta.env.BASE_URL}linkedin.png`} alt="" /></a> 
+        <a href="#"><img src={`${import.meta.env.BASE_URL}youtube.png`} alt="" /></a>
+        <a href="#"><img src={`${import.meta.env.BASE_URL}dribbble.png`} alt="" /></a>
         </div>
     </div>
     </div>

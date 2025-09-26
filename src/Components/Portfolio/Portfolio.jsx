@@ -23,7 +23,7 @@ const Single = ({item}) =>{
             <div className="container">
                 <div className="wrapper"> 
                     <div ref={ref} className="imageContainer">  
-                        <img  src={item.img} alt="project" />
+                        <img  src={`${import.meta.env.BASE_URL}${item.img}`} alt="project" />
                     </div>
                     <motion.div style={{y}} className="textContainer">
                         <h2 >{item.title}</h2>

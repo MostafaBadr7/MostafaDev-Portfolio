@@ -15,7 +15,7 @@ export default function Parallax({type}) {
         <motion.h1 style={{y: yText}}>{type === "services" ? "what we do ?": "what we did ?" }</motion.h1>
         <motion.div className="mountains"></motion.div>
         <motion.div className="planets"
-            style={{y: yBg , backgroundImage:`url(${type === "services"? "/planets.png":"/sun.png"})` }}
+            style={{y: yBg , backgroundImage:`url(${type === "services"? import.meta.env.BASE_URL + "planets.png" : import.meta.env.BASE_URL + "sun.png" })` }}
         ></motion.div>
         <motion.div style={{x: yBg}} className="stars"></motion.div>
         </div>

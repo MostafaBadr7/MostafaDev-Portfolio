@@ -9,6 +9,9 @@
     color: black;
     z-index: 99999;
     position: relative;
+    @include mobile{
+        width: 200px;
+    }
 
 .bg{
     position: fixed;
@@ -17,11 +20,10 @@
     width: 400px;
     background-color: lightgrey;
     bottom: 0;
-
     @include mobile{
         width: 200px;
+        position: fixed;
     }
-
     .links{
         position: absolute;
         width: 100%;
@@ -31,6 +33,10 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+        @include mobile{
+                    top: 100px;
+                    justify-content: start;
+        };
         a{
             font-size: 40px;
             @include mobile{
@@ -50,5 +56,6 @@ left: 25px;
 background-color: transparent;
 border: none;
 cursor: pointer;
+z-index: 9999999;
 }
 }
