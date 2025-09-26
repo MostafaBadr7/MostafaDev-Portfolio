@@ -20,6 +20,7 @@ a{
 section{
     min-height: 100vh;
     scroll-snap-align: center;
+        overflow-x: hidden;
 }
 .course{
     height: 100vh;

@@ -115,11 +115,15 @@
             flex-direction: column;
             justify-content: center;
             gap: 10px;
+            h2{
+                  white-space: nowrap;   
+                }
             @include mobile{
                 border: none;
                 align-items: center;
                 gap: 10px;
                 padding: 20px;
+                text-align: center;
              }
             p{
                 @include mobile{

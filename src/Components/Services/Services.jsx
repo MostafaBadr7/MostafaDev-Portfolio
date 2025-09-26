@@ -20,7 +20,7 @@ const variants ={
 }
 export default function Services() {
     const ref = useRef();
-    const isInView = useInView(ref, {margin:"-100px"});
+    const isInView = useInView(ref, {rootMargin:"-100px"});
   return (
     <motion.div animate={isInView && "animate"} ref={ref} className='services' variants={variants} initial={"initial"} >
         <motion.div variants={variants} className="servicestextContainer">
