@@ -42,7 +42,7 @@ export default function Contact() {
         <motion.div className="textContainer" variants={variants}>
             <motion.h1 variants={variants}>Lets work together</motion.h1>
             <motion.div variants={variants} className="item">
-                <h2>mail</h2>
+                <h2>Mail</h2>
                 <span>Mostafa.badr222@yahoo.com</span>
             </motion.div>
             <motion.div variants={variants} className="item">
@@ -60,7 +60,7 @@ export default function Contact() {
             transition={{delay:3, duration:1}} 
             className="phoneSvg">
                 <svg fill="none" version="1.1" id="Capa_1"   
-                        width="450px" height="450px" viewBox="0 0 32.666 32.666"
+                        viewBox="0 0 32.666 32.666"
                        >
                     <g>
                         <motion.path

@@ -23,10 +23,10 @@ const variants = {
     
   return (
     <motion.div className='sidebar' animate={open? "open" : "closed"}>
-        <ToggleButtons className='ToggleButton' setOpen={setOpen}></ToggleButtons>
         <motion.div className="bg" variants={variants}>
            <Links></Links> 
         </motion.div>
+        <ToggleButtons className='ToggleButton' setOpen={setOpen}></ToggleButtons>
     </motion.div>
   )
 }
