@@ -32,7 +32,7 @@
         }
         p{
             font-weight: 200;
-            font-size: 200px;
+            font-size: 36px;
             color: grey;
             text-align: right;
             @include mobile{
@@ -91,23 +91,27 @@
             }
     }
     .listContainer{
+
         display: flex;
+        justify-content: space-between;
         max-width: 1366px;
+        width: 100%;
         margin: auto;
-        padding-inline: 100px;
+        // padding-inline: 10px;
         @include mobile{
             flex-direction: column;
             width: 100%;
             flex: auto;
          }
         .Box{
-            padding-inline: 50px;
+            padding-inline: 20px;
+            padding-block: 20px;
             background: transparent;
             border: 0.5px solid grey;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 10px;
+            gap: 25px;
             h2{
                   white-space: nowrap;   
                 }
