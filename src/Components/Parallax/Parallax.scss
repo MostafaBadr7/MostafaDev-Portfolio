@@ -26,7 +26,9 @@
         z-index: 3;
         @include mobile{
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size:  auto;
+                    width: 280%;
+                    height: 100%;
         }
     }
     .planets{
