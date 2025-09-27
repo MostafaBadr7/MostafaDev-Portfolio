@@ -21,8 +21,10 @@ const variants ={
 export default function Services() {
     const ref = useRef();
     const isInView = useInView(ref, {rootMargin:"-100px"});
+    const isMobile = window.innerWidth <= 768; // mobile breakpoint
+
   return (
-    <motion.div animate={isInView && "animate"} ref={ref} className='services' variants={variants} initial={"initial"} >
+    <motion.div animate={isInView && !isMobile ? "animate": "visible"} ref={ref} className='services' variants={!isMobile? variants : ""} initial={!isMobile ? "initial": false} >
         <motion.div variants={variants} className="servicestextContainer">
             <p>I focus on helping your brand grow <br /> and move forward</p>
             <hr />
